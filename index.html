@@ -49,4 +49,15 @@
 
   <script>
     function displayResult(answer) {
-      aler
+      speak(answer);
+      alert(answer);
+    }
+
+    function speak(message) {
+      const speech = new SpeechSynthesisUtterance(message);
+      window.speechSynthesis.speak(speech);
+    }
+  </script>
+
+</body>
+</html>
