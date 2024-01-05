@@ -17,6 +17,10 @@
       font-family: 'Arial', sans-serif;
     }
 
+    h1 {
+      font-size: 24px;
+    }
+
     .button {
       width: 150px;
       height: 70px;
@@ -39,4 +43,27 @@
     }
 
     #no {
-      backgr
+      background: linear-gradient(to bottom, #e74430, #c93d36);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Should I say "Yes" or "No"?</h1>
+
+  <div id="yes" class="button" onclick="displayResult('Yes')">Yes</div>
+  <div id="no" class="button" onclick="displayResult('No')">No</div>
+
+  <script>
+    function displayResult(answer) {
+      speak(answer);
+    }
+
+    function speak(message) {
+      const speech = new SpeechSynthesisUtterance(message);
+      window.speechSynthesis.speak(speech);
+    }
+  </script>
+
+</body>
+</html>
