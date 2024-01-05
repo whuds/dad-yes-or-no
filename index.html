@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yes/No Page</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .button {
+      width: 150px;
+      height: 70px;
+      text-align: center;
+      line-height: 70px;
+      cursor: pointer;
+      margin: 10px;
+      font-size: 18px;
+    }
+
+    #yes {
+      background-color: green;
+    }
+
+    #no {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="yes" class="button" onclick="displayResult('yes')">Yes</div>
+  <div id="no" class="button" onclick="displayResult('no')">No</div>
+
+  <script>
+    function displayResult(answer) {
+      alert(answer);
+    }
+  </script>
+
+</body>
+</html>
