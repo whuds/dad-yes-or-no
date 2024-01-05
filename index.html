@@ -9,11 +9,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
       height: 100vh;
       margin: 0;
       background-color: black;
       color: white;
+      font-family: 'Arial', sans-serif;
     }
 
     .button {
@@ -38,26 +39,4 @@
     }
 
     #no {
-      background: linear-gradient(to bottom, #e74430, #c93d36);
-    }
-  </style>
-</head>
-<body>
-
-  <div id="yes" class="button" onclick="displayResult('yes')">Yes</div>
-  <div id="no" class="button" onclick="displayResult('no')">No</div>
-
-  <script>
-    function displayResult(answer) {
-      speak(answer);
-      alert(answer);
-    }
-
-    function speak(message) {
-      const speech = new SpeechSynthesisUtterance(message);
-      window.speechSynthesis.speak(speech);
-    }
-  </script>
-
-</body>
-</html>
+      backgr
