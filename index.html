@@ -12,6 +12,8 @@
       justify-content: space-around;
       height: 100vh;
       margin: 0;
+      background-color: black;
+      color: white;
     }
 
     .button {
@@ -22,14 +24,21 @@
       cursor: pointer;
       margin: 10px;
       font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease;
     }
 
     #yes {
-      background-color: green;
+      background: linear-gradient(to bottom, #1db954, #168f4b);
     }
 
     #no {
-      background-color: red;
+      background: linear-gradient(to bottom, #e74430, #c93d36);
     }
   </style>
 </head>
@@ -40,9 +49,4 @@
 
   <script>
     function displayResult(answer) {
-      alert(answer);
-    }
-  </script>
-
-</body>
-</html>
+      aler
